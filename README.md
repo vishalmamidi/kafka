@@ -36,9 +36,6 @@ kafka-console-consumer.sh --topic log --from-beginning --bootstrap-server localh
 kafka-console-consumer.bat --topic log --from-beginning --bootstrap-server localhost
 ```
 
-```
-kafka-console-consumer.bat --topic jewel-log --from-beginning --bootstrap-server b-2.jewelkafka-dev.guzv65.c21.kafka.us-east-1.amazonaws.com:9092
-```
 
 ## delete
 ```
