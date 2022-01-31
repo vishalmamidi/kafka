@@ -12,10 +12,10 @@ aws kafka get-bootstrap-brokers --cluster-arn arn
 ## list topics
 
 ```
-bin/kafka-topics.sh --list --zookeeper localhost:2181
+bin/kafka-topics.sh --list --bootstrap-server localhost:2181
 ```
 ```
-bin\windows\kafka-topics.bat --list --zookeeper localhost:2181
+bin\windows\kafka-topics.bat --list --bootstrap-server localhost:2181
 ```
 
 ## create topic
@@ -24,6 +24,12 @@ kafka-topics.sh --create --partitions 10 --replication-factor 2 --topic log --bo
 ```
 ```
 kafka-topics.bat --create --partitions 10 --replication-factor 2 --topic log --bootstrap-server localhost:2181
+```
+
+## producer
+
+```
+bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
 ```
 
 ## consumer
@@ -39,5 +45,5 @@ kafka-console-consumer.bat --topic log --from-beginning --bootstrap-server local
 
 ## delete
 ```
-kafka-topics.bat --delete --zookeeper localhost --topic jewel-audit
+kafka-topics.bat --delete --bootstrap-server localhost --topic jewel-audit
 ```
