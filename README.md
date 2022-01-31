@@ -20,6 +20,9 @@ bin\windows\kafka-topics.bat --list --bootstrap-server localhost:2181
 
 ## create topic
 ```
+bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+```
+```
 kafka-topics.sh --create --partitions 10 --replication-factor 2 --topic log --bootstrap-server localhost:2181
 ```
 ```
