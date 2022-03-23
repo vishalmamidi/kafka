@@ -3,7 +3,7 @@
 bin\windows\zookeeper-server-start.bat config\zookeeper.properties
 ```
 ```
-bin\windows\kafka-server-start.sh config\server.properties
+bin\windows\kafka-server-start.bat config\server.properties
 ```
 
 ## list msk clusters to get arn 
