@@ -1,3 +1,11 @@
+## start local kafka
+```
+bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+```
+```
+bin\windows\kafka-server-start.sh config\server.properties
+```
+
 ## list msk clusters to get arn 
 ```
 aws kafka list-clusters
