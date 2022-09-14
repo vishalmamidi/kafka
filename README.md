@@ -1,3 +1,15 @@
+## Quick Start
+https://kafka.apache.org/downloads
+```
+tar --extract --file ./kafka**.tgz
+```
+
+```
+tar -xvzf ./kafka**.tgz
+```
+
+
+
 ## start local kafka
 ```
 bin\windows\zookeeper-server-start.bat config\zookeeper.properties
