@@ -15,3 +15,14 @@ kafka-console-consumer.sh \
     --topic test \
     --from-beginning
 ```
+
+### list topics 
+```
+kafka-topics.sh --bootstrap-server=kafka-release.kafka.svc.cluster.local:9092 --list
+```
+
+### describe topics 
+```
+kafka-topics.sh --bootstrap-server=kafka-release.kafka.svc.cluster.local:9092 --describe --topic test
+```
+
